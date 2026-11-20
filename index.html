@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call Jimmy's | Mobile Car Detailing</title>
+  <meta name="description" content="Call Jimmy's Mobile Detailing — we come to you for paint correction, interior detailing, ceramic coating and full vehicle care." />
+  <meta name="theme-color" content="#0D0C0A" />
+
+  <meta property="og:title" content="Call Jimmy's Mobile Detailing" />
+  <meta property="og:description" content="Mobile car detailing that comes to you — paint correction, interiors, ceramic coating and more." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Playfair Display (headings, echoes the logo's serif) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+
+  <!-- Shared gold gradient used by the arc artwork (zero-size, not displayed) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="gold-grad" gradientUnits="userSpaceOnUse" x1="40" y1="30" x2="360" y2="370">
+        <stop offset="0" stop-color="#F8E39B" />
+        <stop offset="0.5" stop-color="#D9AE3F" />
+        <stop offset="1" stop-color="#B07F10" />
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- ============================= -->
+  <!-- TOP NAV BAR                    -->
+  <!-- ============================= -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar">
+      <a href="#home" class="logo" aria-label="Call Jimmy's Mobile Detailing — home">
+        <!-- Logo is capped by height in CSS (.logo-img) so it stays compact -->
+        <img src="logo.png" alt="Call Jimmy's Mobile Detailing Services" class="logo-img" width="480" height="144">
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#our-work" class="nav-link">Our Work</a></li>
+        <li><a href="#packages" class="nav-link">Packages</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#enquiry" class="nav-link nav-cta">Enquiry</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============================= -->
+    <!-- HOME / HERO SECTION             -->
+    <!-- ============================= -->
+    <section id="home" class="hero">
+      <!-- Signature artwork: the logo's concentric arcs, drawn in on page load -->
+      <svg class="hero-arcs" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="url(#gold-grad)" stroke-width="22" stroke-linecap="round">
+          <path class="arc arc-1" pathLength="1" d="M 334.0 95.3 A 170 170 0 1 0 334.0 304.7" />
+          <path class="arc arc-2" pathLength="1" d="M 298.5 123.0 A 125 125 0 1 0 298.5 277.0" />
+          <path class="arc arc-3" pathLength="1" d="M 263.0 150.7 A 80 80 0 1 0 263.0 249.3" />
+        </g>
+        <circle class="arc-dot" cx="200" cy="200" r="22" fill="url(#gold-grad)" />
+      </svg>
+
+      <div class="hero-content">
+        <p class="eyebrow">Mobile detailing — we come to you</p>
+        <h1 class="hero-title">The shine, delivered to your driveway.</h1>
+        <p class="hero-desc">
+          From daily drivers to weekend builds, Call Jimmy's restores paint, interior and
+          wheels back to showroom condition — at your home or workplace. Every vehicle
+          gets the same careful attention to detail, with no shortcuts and no rush.
+        </p>
+        <div class="hero-actions">
+          <a href="#enquiry" class="btn btn-primary">Book an Enquiry</a>
+          <a href="#our-work" class="btn btn-ghost">See Our Work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- OUR WORK SECTION                -->
+    <!-- ============================= -->
+    <section id="our-work" class="work">
+      <div class="section-head">
+        <p class="eyebrow">Our Work</p>
+        <h2 class="section-title">See the transformation</h2>
+        <p class="section-desc">
+          A look at recent jobs across paint correction, interiors, coatings and wheels.
+          Each panel cycles through photos from real Call Jimmy's jobs.
+        </p>
+      </div>
+
+      <div class="work-grid">
+
+        <!-- WORK BLOCK 1 -->
+        <!-- Add / remove <img> tags inside .rotator-track — the script picks up every image automatically. -->
+        <article class="work-block" data-label="Exterior &amp; Paint Correction">
+          <div class="rotator" data-interval="4000">
+            <div class="rotator-track">
+              <img src="Groupa1.jpeg" alt="Exterior detailing example 1" class="rotator-img is-active">
+              <img src="Groupa2.jpeg" alt="Exterior detailing example 2" class="rotator-img">
+              <img src="Groupa1.jpeg" alt="Exterior detailing example 3" class="rotator-img">
+              <img src="Groupa2.jpeg" alt="Exterior detailing example 4" class="rotator-img">
+            </div>
+            <div class="rotator-dots" aria-hidden="true"></div>
+          </div>
+          <h3 class="work-block-label">Precision</h3>
+        </article>
+
+        <!-- WORK BLOCK 2 -->
+        <article class="work-block" data-label="Interior Detail">
+          <div class="rotator" data-interval="4000">
+            <div class="rotator-track">
+              <img src="Groupb1.jpeg" alt="Interior detailing example 1" class="rotator-img is-active">
+              <img src="Groupb2.jpeg" alt="Interior detailing example 2" class="rotator-img">
+              <img src="Groupb1.jpeg" alt="Interior detailing before" class="rotator-img">
+              <img src="Groupb2.jpeg" alt="Interior detailing after" class="rotator-img">
+              <!-- GroupB3p is the "before" image for Groupb3 -->
+            </div>
+            <div class="rotator-dots" aria-hidden="true"></div>
+          </div>
+          <h3 class="work-block-label">Attention to Detail</h3>
+        </article>
+
+        <!-- WORK BLOCK 3 -->
+        <article class="work-block" data-label="Ceramic Coating">
+          <div class="rotator" data-interval="4000">
+            <div class="rotator-track">
+              <img src="GroupC1.jpeg" alt="Ceramic coating example 1" class="rotator-img is-active">
+              <img src="GroupC2.jpeg" alt="Ceramic coating example 2" class="rotator-img">
+              <img src="GroupC1.jpeg" alt="Ceramic coating example 3" class="rotator-img">
+              <img src="Groupc2.jpeg" alt="Ceramic coating example 4" class="rotator-img">
+            </div>
+            <div class="rotator-dots" aria-hidden="true"></div>
+          </div>
+          <h3 class="work-block-label">Clean &amp; Conditioned</h3>
+        </article>
+
+        <!-- WORK BLOCK 4 -->
+        <article class="work-block" data-label="Wheels &amp; Undercarriage">
+          <div class="rotator" data-interval="4000">
+            <div class="rotator-track">
+              <img src="GroupD1.jpeg" alt="Wheel detailing example 1" class="rotator-img is-active">
+              <img src="GroupD2.jpeg" alt="Wheel detailing example 2" class="rotator-img">
+              <img src="Groupd1.jpeg" alt="Wheel detailing example 3" class="rotator-img">
+              <img src="GroupD2.jpeg" alt="Wheel detailing example 4" class="rotator-img">
+            </div>
+            <div class="rotator-dots" aria-hidden="true"></div>
+          </div>
+          <h3 class="work-block-label">Professional Handling</h3>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- PACKAGES SECTION                -->
+    <!-- ============================= -->
+    <!-- EDIT: package names, prices and inclusions below are placeholders — swap in your real tiers -->
+    <section id="packages" class="packages">
+      <div class="section-head">
+        <p class="eyebrow">Packages</p>
+        <h2 class="section-title">Choose your package</h2>
+        <p class="section-desc">
+          Three tiers to match your car and your budget — from a quick refresh to the full works.
+        </p>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- PACKAGE 1 -->
+        <article class="package-card">
+          <div class="package-head">
+            <h3 class="package-name">Essential</h3>
+            <p class="package-price">From $149<span>/ vehicle</span></p>
+          </div>
+          <ul class="package-features">
+            <li>Exterior hand wash &amp; dry</li>
+            <li>Wheel &amp; tyre clean</li>
+            <li>Interior vacuum</li>
+            <li>Dash &amp; console wipe-down</li>
+            <li>Window clean, in &amp; out</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-ghost btn-block package-cta">Send Enquiry</a>
+        </article>
+
+        <!-- PACKAGE 2 (highlighted — remove is-featured class and .package-badge to unhighlight) -->
+        <article class="package-card is-featured">
+          <span class="package-badge">Most Popular</span>
+          <div class="package-head">
+            <h3 class="package-name">Signature</h3>
+            <p class="package-price">From $249<span>/ vehicle</span></p>
+          </div>
+          <ul class="package-features">
+            <li>Everything in Essential</li>
+            <li>Carpet cleaning</li>
+            <li>Stain or odour removal</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-primary btn-block package-cta">Send Enquiry</a>
+        </article>
+
+        <!-- PACKAGE 3 -->
+        <article class="package-card">
+          <div class="package-head">
+            <h3 class="package-name">Ultimate</h3>
+            <p class="package-price">From $399<span>/ vehicle</span></p>
+          </div>
+          <ul class="package-features">
+            <li>Everything in Signature</li>
+            <li>Advanced Seat Cleaning</li>
+            <li>Advanced detailing</li>
+            <li>Engine bay detail</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-ghost btn-block package-cta">Send Enquiry</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- MORE SERVICES SECTION           -->
+    <!-- ============================= -->
+    <!-- EDIT: service names, prices and feature lines are placeholders. Reuses the package-card styling. -->
+    <section id="more-services" class="packages">
+      <div class="section-head">
+        <p class="eyebrow">More Services</p>
+        <h2 class="section-title">Add-on services</h2>
+        <p class="section-desc">
+          Standalone treatments you can book on their own or alongside any package.
+        </p>
+      </div>
+
+      <div class="packages-grid services-grid">
+
+        <!-- SERVICE 1 -->
+        <article class="package-card">
+          <div class="package-head">
+            <h3 class="package-name">Ceramic Coating</h3>
+            <p class="package-price">From $999<span>/ vehicle</span></p>
+          </div>
+          <ul class="package-features">
+            <li>Paint decontamination</li>
+            <li>Multi-layer ceramic application</li>
+            <li>Long-term gloss &amp; protection</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-ghost btn-block package-cta">Send Enquiry</a>
+        </article>
+
+        <!-- SERVICE 2 -->
+        <article class="package-card">
+          <div class="package-head">
+            <h3 class="package-name">Headlight Restoration</h3>
+            <p class="package-price">From $80<span>/ vehicle</span></p>
+          </div>
+          <ul class="package-features">
+            <li>Oxidation &amp; haze removal</li>
+            <li>Wet-sand &amp; polish</li>
+            <li>UV-protective sealant</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-ghost btn-block package-cta">Send Enquiry</a>
+        </article>
+
+        <!-- SERVICE 3 -->
+        <article class="package-card">
+          <div class="package-head">
+            <h3 class="package-name">Paint Correction</h3>
+            <p class="package-price">From $599<span>/ vehicle</span></p>
+          </div>
+          <ul class="package-features">
+            <li>Swirl &amp; scratch removal</li>
+            <li>Single or multi-stage polish</li>
+            <li>Restored gloss &amp; clarity</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-ghost btn-block package-cta">Send Enquiry</a>
+        </article>
+
+        <!-- SERVICE 4 -->
+        <article class="package-card">
+          <div class="package-head">
+            <h3 class="package-name">Window Tinting</h3>
+            <p class="package-price">Custom Quote</p>
+          </div>
+          <ul class="package-features">
+            <li>Precision-cut film, no edge gaps</li>
+            <li>Heat &amp; UV rejection</li>
+            <li>Choice of tint shade</li>
+          </ul>
+          <a href="#enquiry" class="btn btn-ghost btn-block package-cta">Send Enquiry</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ABOUT US SECTION                -->
+    <!-- ============================= -->
+    <section id="about" class="about">
+      <div class="about-media" aria-hidden="true">
+        <!-- EDIT: swap this emblem for a real photo of Jimmy / the van if you like -->
+        <div class="emblem">
+          <svg viewBox="0 0 400 400" focusable="false">
+            <g fill="none" stroke="url(#gold-grad)" stroke-width="22" stroke-linecap="round">
+              <path d="M 334.0 95.3 A 170 170 0 1 0 334.0 304.7" />
+              <path d="M 298.5 123.0 A 125 125 0 1 0 298.5 277.0" />
+              <path d="M 263.0 150.7 A 80 80 0 1 0 263.0 249.3" />
+            </g>
+            <circle cx="200" cy="200" r="22" fill="url(#gold-grad)" />
+          </svg>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">About Us</p>
+        <h2 class="section-title">Built on attention to detail</h2>
+        <!-- EDIT: replace with your real story — 2-4 short paragraphs -->
+        <p>
+          Call Jimmy's started with one simple idea: most cars never get the care they deserve,
+          and getting it shouldn't mean giving up your day. So we bring the detailing to you.
+        </p>
+        <p>
+          Today we work on everything from daily commuters to show cars, using
+          professional-grade products and techniques refined over hundreds of jobs.
+        </p>
+        <ul class="about-stats">
+          <!-- EDIT: swap these stats for real numbers, or remove the block -->
+          <li><span class="stat-num">500+</span><span class="stat-label">Cars detailed</span></li>
+          <li><span class="stat-num">5★</span><span class="stat-label">Average rating</span></li>
+          <li><span class="stat-num">100%</span><span class="stat-label">Mobile service</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================= -->
+    <!-- ENQUIRY SECTION                 -->
+    <!-- ============================= -->
+    <section id="enquiry" class="enquiry">
+      <div class="enquiry-info">
+        <p class="eyebrow">Enquiry</p>
+        <h2 class="section-title">Get a quote</h2>
+        <p class="section-desc">
+          Tell us a bit about your vehicle and what it needs. We'll get back to you
+          with a quote and the next available booking slot.
+        </p>
+
+        <div class="contact-card">
+          <span class="contact-label">Call or text</span>
+          <!-- EDIT: confirm this is the number you want on the Call Jimmy's site -->
+          <a href="tel:+610410020067" class="contact-phone">+61 0410020067</a>
+        </div>
+      </div>
+
+      <form class="enquiry-form" id="enquiry-form" novalidate
+            action="https://formspree.io/f/xnpdzebd" method="POST">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required />
+        </div>
+
+        <div class="form-row">
+          <label for="mobile">Mobile</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="04XX XXX XXX" autocomplete="tel" required />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your car and what you're after..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
+
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============================= -->
+  <!-- FOOTER                          -->
+  <!-- ============================= -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Call Jimmy's Mobile Detailing Services" class="footer-logo" width="480" height="144" loading="lazy">
+        <p class="footer-tagline">Detailing done properly — at your door.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-work">Our Work</a></li>
+        <li><a href="#packages">Packages</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#enquiry">Enquiry</a></li>
+      </ul>
+
+      <div class="footer-contact">
+        <span class="contact-label">Call or text</span>
+        <!-- Keep this in sync with the number in the enquiry section above -->
+        <a href="tel:+610410020067" class="contact-phone">+61 0410020067</a>
+
+        <div class="social-icons">
+          <!-- EDIT: these still point at the old Rusteez accounts — swap in Call Jimmy's links -->
+          <a href="https://www.instagram.com/calljimmysmobiledetailing?knvt=b240dXdpNmw2MHE%3D&utm_source=qr" class="social-icon" aria-label="Call Jimmy's on Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="12" cy="12" r="4.3" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@calljimmysdetailing?is_from_webapp=1&sender_device=pc" aria-label="Call Jimmy's on TikTok" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M16.5 2c.3 2.2 1.7 3.9 3.9 4.2v2.7c-1.4 0-2.7-.4-3.9-1.2v6.7c0 3.2-2.6 5.6-5.7 5.6-3.1 0-5.7-2.4-5.7-5.6 0-3.1 2.6-5.6 5.7-5.6.4 0 .8 0 1.1.1v2.8a2.9 2.9 0 0 0-1.1-.2 2.9 2.9 0 1 0 0 5.8c1.6 0 2.9-1.3 2.9-3V2h2.8z" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Call Jimmy's Mobile Detailing. All rights reserved.</p>
+      <!-- EDIT: add ABN / business number here if required -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

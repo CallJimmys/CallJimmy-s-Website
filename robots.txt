@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# EDIT: replace YOUR-DOMAIN.com with the real Call Jimmy's domain
+Sitemap: https://calljimmysmobiledetaingservices.com/sitemap.xml
